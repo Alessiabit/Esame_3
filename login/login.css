@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form label {
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+form input[type=text],
+form input[type=password] {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+form input[type=text]:focus,
+form input[type=password]:focus {
+  border-color: #66b0ff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+form input[type=text]::-moz-placeholder, form input[type=password]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form input[type=text]::placeholder,
+form input[type=password]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form button[type=submit] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff4c4c;
+  font-size: 14px;
+  margin-top: 10px;
+}/*# sourceMappingURL=login.css.map */

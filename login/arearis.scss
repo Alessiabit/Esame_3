@@ -1,0 +1,142 @@
+// Variabili di colore
+$primary-color: #ff6f61;      
+$secondary-color: #37474f;    
+$background-color: #fafafa;   
+$text-color: #37474f;        
+$border-color: #e0e0e0;       
+$action-color: #4caf50;       
+$error-color: #ff3d3d;        
+$shadow-color: rgba(0, 0, 0, 0.07);  
+
+// Corpo della pagina
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+// Contenitore principale
+.container {
+    width: 800px;
+    padding: 40px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Titolo della sezione
+h2 {
+    color: $secondary-color;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+// Stile per le tabelle
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; // Spaziatura tra le righe
+    margin-bottom: 30px;
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        background-color: #fff;
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px $shadow-color;
+    }
+
+    th {
+        background-color: $secondary-color;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    td {
+        color: $text-color;
+    }
+}
+
+// Stili per i link di azione
+a.action-link {
+    color: #fff;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &.add-link {
+        background-color: $action-color;
+    }
+
+    &.delete-link {
+        background-color: $error-color;
+    }
+}
+
+// Messaggio di benvenuto
+.welcome-message {
+    font-size: 16px;
+    color: darken($text-color, 15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+// Pulsante di logout
+.logout-button {
+    background-color: $error-color;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+// Sezione azioni
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+    h3 {
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    a.add-link {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

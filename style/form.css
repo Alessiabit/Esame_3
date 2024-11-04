@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Stili del form */
+.form {
+  background: linear-gradient(rgb(132, 132, 235), rgb(105, 183, 239));
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  color: black;
+}
+
+/* Input e textarea */
+.form input[type=text],
+.form input[type=email],
+.form input[type=tel],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+/* Placeholder */
+.form input[type=text]::-moz-placeholder, .form input[type=email]::-moz-placeholder, .form input[type=tel]::-moz-placeholder, .form textarea::-moz-placeholder {
+  color: #000000;
+}
+.form input[type=text]::placeholder,
+.form input[type=email]::placeholder,
+.form input[type=tel]::placeholder,
+.form textarea::placeholder {
+  color: #000000;
+}
+
+/* Pulsante di invio */
+.form input[type=submit] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+/* Messaggi di errore */
+.error {
+  color: #ff4c4c;
+  font-size: 14px;
+}
+
+/* Messaggi di successo */
+.success {
+  color: #4caf50;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Form responsive */
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+}/*# sourceMappingURL=form.css.map */

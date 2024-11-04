@@ -1,0 +1,15 @@
+footer {
+  background: linear-gradient(rgb(131, 93, 131), #5b367c);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  width: 100%;
+}
+footer a {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  margin-left: 10px;
+}/*# sourceMappingURL=footer.css.map */

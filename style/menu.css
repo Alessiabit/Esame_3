@@ -1,0 +1,124 @@
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgb(131, 93, 131), #5b367c);
+  color: #000000;
+  height: 80px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.menu li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu a {
+  display: block;
+  padding: 1px;
+  margin: 0;
+  transition: color 0.3s;
+  transition: color 0.3s, border 0.3s;
+}
+
+.top-nav a:hover {
+  color: #ffffff;
+  border: 2px solid rgb(117, 117, 237);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.menu-bottone {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#linee {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#linee:checked + .menu-bottone .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#linee:checked + .menu-bottone .menu-button {
+  background: rgba(221, 220, 220, 0.269);
+}
+
+#linee:checked + .menu-bottone .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+a {
+  color: #000000;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #f9f8f8;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 99;
+  }
+  a {
+    color: #000000;
+  }
+  .menu-bottone {
+    display: flex;
+  }
+  #linee:checked + .menu-bottone + .menu {
+    display: flex;
+  }
+  .menu li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #868889;
+  }
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,115 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  color: #37474f;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 800px;
+  padding: 40px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #37474f;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-bottom: 30px;
+}
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+table th {
+  background-color: #37474f;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+table td {
+  color: #37474f;
+}
+
+a.action-link {
+  color: #fff;
+  background-color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+a.action-link:hover {
+  transform: translateY(-2px);
+}
+a.action-link.add-link {
+  background-color: #4caf50;
+}
+a.action-link.delete-link {
+  background-color: #ff3d3d;
+}
+
+.welcome-message {
+  font-size: 16px;
+  color: #181e22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.logout-button {
+  background-color: #ff3d3d;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.2s;
+}
+.logout-button:hover {
+  transform: translateY(-2px);
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.actions-container h3 {
+  color: #37474f;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.actions-container a.add-link {
+  font-size: 14px;
+  font-weight: 500;
+}/*# sourceMappingURL=arearis.css.map */
